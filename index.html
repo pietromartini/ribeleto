@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav id="container">
+        <div class="menu">
+            <img src="imgs/ribeleto.png" alt="ribeleto" class="ribeleto">
+            <a href="#" class="nav-destaque">Início</a>
+            <a href="cardapio.html" class="nav-itens">Cardápio</a>
+            <a href="pedidos.html" class="nav-itens">Pedidos</a>
+            <a href="login.html" class="nav-itens">LOGIN</a>
+            <a href="cadastrar.html" class="nav-itens">CADASTRAR-SE</a>
+            <button onclick="myFunction()" class="dark-mode">ALTERAR TEMA</button>
+            <input type="text" id="campo-busca" placeholder="Buscar...">
+            <a href="carrinho.html" class="nav-itens">🛒</a>
+            <a href="perfil.html" class="nav-itens">👤</a>
+        </div>
+    </nav>
+</header>
+
+<section id="conteudo">
+    <div class="text">
+        <div class="welcome">
+        <h1>Seja muito bem-vindo(a) ao Ribeleto!</h1>
+        </div>
+        <div class="sobre-text">
+        <h2>Sobre Nós</h2>
+        <p class="descricao">O Ribeleto é uma pizzaria que nasceu do amor pela culinária e pela paixão por criar<br>experiências gastronômicas únicas. 
+        Nosso objetivo é proporcionar momentos de prazer <br>e satisfação aos nossos clientes, oferecendo pizzas artesanais de 
+        alta qualidade, <br>preparadas com ingredientes frescos e selecionados.
+        Com um ambiente acolhedor e um <br>atendimento personalizado, buscamos criar uma conexão especial com cada pessoa que <br>nos visita, tornando cada refeição uma experiência memorável.
+        <br>E aí, tá com fome? Nosso cardápio tem tudo o que você precisa.</p>
+        <a class="cardapio" href="cardapio.html">Olhar Cardápio</a>
+        <div class="texto">
+        <img src="imgs/DSC01231.jpg.webp" alt="cardapio" class="capa-cardapio">
+        </div>
+    </div>
+    <h2>Promoções da Semana</h2>
+        </div>
+
+<section id="promocoes">
+<div class="discount">
+    <div class="card-discount">
+    <img src="imgs/calabresa.png" alt="calabresa" class="pizza">
+    <p class="pzz-info">Pizza Grande
+    <br>de Calabresa +
+    <br>Refrigerante de 2L</p>
+    <p class="pzz-price">R$99,99</p>
+    <button class="btn-carrinho" data-nome="Pizza Grande de Calabresa + Refrigerante de 2L" data-preco="99.99" data-imagem="imgs/calabresa.png">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="card-discount">
+    <img src="imgs/chocolate.png" alt="" class="pizza">
+    <p class="pzz-info">Pizza Grande de 
+    <br>Morango com
+    <br>Chocolate</p>
+    <p class="pzz-price">R$81,99</p>
+    <button class="btn-carrinho" data-nome="Pizza Grande de Morango com Chocolate" data-preco="81.99" data-imagem="imgs/chocolate.png">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="card-discount">
+    <img src="imgs/catupiry.png" alt="" class="pizza">
+    <p class="pzz-info">Pizza Grande
+    <br>de Frango com
+    <br>Catupiry</p>
+    <p class="pzz-price">R$64,99</p>
+    <button class="btn-carrinho" data-nome="Pizza Grande de Frango com Catupiry" data-preco="64.99" data-imagem="imgs/catupiry.png">Adicionar ao Carrinho</button>
+    </div>
+</div>
+</section>
+</section>
+
+<section id="categories">
+<h2>Categorias Rápidas</h2>
+    <div class="cards-all">
+    <div class="card-categories"><img src="imgs/iconpizza.png" alt="categoria1" class="card-icons"><p class="card-names">Pizzas</p>
+    <br><button class="btn-mais"><a href="cardapio.html" class="see-more">Ver Mais</button></div></a>
+    <div class="card-categories"><img src="imgs/iconbebida.jpg" alt="categoria2" class="card-icons"><p class="card-names">Bebidas</p>
+    <br><button class="btn-mais"><a href="cardapio.html" class="see-more">Ver Mais</button></div></a>
+    <div class="card-categories"><img src="imgs/combo.jpg" alt="categoria3" class="card-icons"><p class="card-names">Combos</p>
+    <br><button class="btn-mais"><a href="cardapio.html" class="see-more">Ver Mais</button></div></a>
+    <div class="card-categories"><img src="imgs/sobremesa.jpg" alt="categoria4" class="card-icons"><p class="card-names">Sobremesas</p>
+    <br><button class="btn-mais"><a href="cardapio.html" class="see-more">Ver Mais</button></div></a>
+    </div>
+</section>
+
+<footer>
+    <div class="rodape-left">
+        <h3>Ribeleto</h3> 
+        <a href="#" class="text-rodape">Início</a>   
+        <a href="cardapio.html" class="text-rodape">Cardápio</a>   
+        <a href="login.html" class="text-rodape">Login</a>   
+    </div>
+
+    <div class="rodape-center">
+        <h3>Nossa história  </h3> 
+        <a href="#conteudo" class="text-rodape">Sobre Nós</a>   
+        <a href="#promocoes" class="text-rodape">Promoções</a>   
+        <a href="#categories" class="text-rodape">Categorias</a>
+    </div>
+
+    <div class="rodape-right">
+        <h3>Entre em contato</h3> 
+        <a href="#" class="text-rodape">(31)98483-2804</a>   
+        <a href="#" class="text-rodape">ribeletopizza@gmail.com</a>   
+        <a href="#" class="text-rodape">@ribeletobh</a>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

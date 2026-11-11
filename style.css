@@ -1,0 +1,567 @@
+    *{ padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Geist";
+    transition: background-color 0.8s ease, color 0.8s ease, border-color 0.8s ease, box-shadow 0.8s ease, border-bottom 0.8s ease;
+    }
+
+    a {
+    text-decoration: none;
+    }
+
+    body {
+    background: white;
+    color: black;
+    font-size: 25px;
+    }
+
+    .dark-mode, body.dark-mode {
+    color: white;
+    background: linear-gradient(to bottom, #ff5500 0%, #1e1e1e 50%, #121212 100%);
+    }
+
+    .dark-mode .nav-itens {
+    color: white;
+    }
+
+    .dark-mode .input-busca, .dark-mode #campo-busca {
+    background-color: black;
+    color: white;
+    border: 1px solid #444;
+    } 
+
+    .dark-mode footer {
+    background-color: rgb(32, 32, 32);
+    }
+
+    .dark-mode h2, .dark-mode h3 {
+    color: white;
+    }
+
+    .dark-mode .link-login {
+    color: white;
+    border: 1px solid white;
+    }
+
+    .dark-mode .cadastro-all, .dark-mode #cadastro-form, .dark-mode #perfil-form {
+    background-color: rgba(30, 30, 30, 0.9);
+    border: 1px solid white;
+    color: white;
+    }
+
+    .dark-mode .cadastro-categoria,
+    .dark-mode .cadastro-title {
+    color: white;
+    }
+
+    .dark-mode .input-cadastro {
+    background-color: #2d2d2d;
+    color: white;
+    border: 1px solid #555;
+    }
+
+    .dark-mode .text-card, .dark-mode .card-pizzas, .dark-mode .card-pedido {
+    background-color: #1e1e1e;
+    border: 1px solid white;
+    color: white;
+    }
+
+    .dark-mode .tab-section, .dark-mode .form-crud {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+    }
+
+    .dark-mode .tabela-admin {
+    background-color: #1e1e1e;
+    color: white;
+    }
+
+    .dark-mode .tabela-admin th {
+    background-color: #2d2d2d;
+    color: white;
+    }
+
+    .dark-mode .tabela-admin td {
+    color: white;
+    border: 1px solid #444;
+    }
+
+    .dark-mode .area-importacao {
+    background-color: #2d2d2d;
+    color: white ;
+    }
+
+    header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    }
+
+    #container {
+    padding: 15px;
+    display: flex;
+    font-size: 14px;
+    font-family: "Geist";
+    z-index: 1;
+    margin-left: 25vh;
+    }
+
+    .menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 37px;
+    position: relative;
+    align-items: center;
+    margin-left: 120px;
+    }
+
+    .text {
+    margin-left: 3vh;
+    }
+
+    h1:hover {
+    color: #ff5000;
+    }
+
+    .menu img {
+    position: absolute;
+    height: 100px;
+    left: -300px;
+    margin-bottom: 7px;
+    }
+
+    .nav-itens {
+    color: black;
+    text-transform: uppercase;
+    }
+
+    .nav-itens:hover {
+    color: #ff5500;
+    border-bottom: 1px solid #ff5500;
+    }
+
+    .nav-destaque {
+    color: #ff5500;
+    text-transform: uppercase;
+    }
+
+    .nav-destaque:hover {
+    color: #ff5500;
+    border-bottom: 1px solid #ff5500;
+    }
+
+    .btn-carrinho:hover {
+    transform: translateY(-2px);
+    }
+
+    .ribeleto {
+    object-fit: cover;
+    }
+
+    .dark-mode {
+    background-color: black;
+    color: white;
+    }
+
+    .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: 60vh;
+    }
+
+    h1 {
+    font-size: 64px;
+    font-family: "Outfit";
+    height: 100px;
+    }
+
+    h2 {
+    font-size: 64px;
+    font-family: "Outfit";
+    color: #ff5500;
+    margin-left: 17px;
+    }
+
+    .descricao {
+    margin-bottom: 3vh;
+    margin-left: 17px;
+    }
+
+    .discount {
+    display: flex;
+    justify-content: left;
+    width: 100%; 
+    gap: 240px;
+    background-color: rgb(41, 0, 0);
+    }
+
+    .card-discount {
+    background-color: white;
+    padding: 50px;
+    border-radius: 32px;
+    margin-left: 9vh;
+    background-color: rgb(255, 102, 0);
+    }
+
+    .card-discount:hover {
+    border: 3px solid black;
+    }
+
+    .sobre-text {
+    border: 1px solid black;
+    border-radius: 32px;
+    width: 98%;
+    height: 680px;
+    }
+
+    .btn-carrinho {
+    padding: 10px 40px;
+    border-radius: 32px;
+    background-color: #ff5000;
+    color: white;
+    font-size: 18px;
+    font-family: "Outfit";
+    box-shadow: 0 4px 10px #ff5000;
+    }
+
+    .pzz-info {
+    border-bottom: 1px solid gray;
+    }
+
+    .pizza {
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+    }
+
+    .pzz-price {
+    text-align: left;
+    margin-top: 2vh;
+    }
+
+    .cardapio {
+    padding: 15px 40px;
+    font-size: 24px;
+    border-radius: 32px;
+    color: white;
+    background-color: #ff5500;
+    box-shadow: 0 4px 10px #ff5000;
+    font-family: "Outfit";
+    border: none;
+    margin-left: 17px;
+    }
+
+    #categories {
+    margin-left: 3vh;
+    }
+
+    .welcome{
+    display: flex;
+    margin-bottom: 3vh;
+    justify-content: left;
+    }
+
+    .cards-all {
+    display: flex;  
+    gap: 240px;
+    }
+
+    .card-categories {
+    border-radius: 24px;
+    height: 300px;
+    width: 170px;
+    margin-left: 9vh;
+    }
+
+    .card-icons {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    }
+
+    .btn-mais {
+    padding: 5px 20px;
+    border-radius: 32px;
+    color: #ff5000;
+    background-color: white;
+    border: 1px solid #ff5000;
+    }
+
+    .btn-mais:hover {
+    background-color: rgb(163, 163, 163);
+    transform: translateY(-2px);
+    }
+
+    .capa-cardapio {
+    position: relative;
+    height: 680px;
+    width: 800px;
+    border-radius: 32px;
+    margin-top: -11.4vh;
+    }
+
+    .texto {
+    position: relative;
+    justify-self: right;
+    margin-top: -54vh;
+    }
+
+    footer {
+    background-color: white;
+    border-top: 1px solid gray;
+    display: flex;
+    background-color: #e9e9e9;
+    }
+
+    h3 {
+    font-family: "Outfit";
+    font-size: 14px;
+    color: #3e3e3e;
+    font-weight: bolder;
+    }
+
+    .see-more {
+    color: #ff5000;
+    }
+
+    .text-rodape {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.22;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #717171;
+    }
+
+    .rodape-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 20vh;
+    }
+
+    .rodape-center {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 50vh;
+    }
+
+    .rodape-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 50vh;
+    }
+
+    .text-rodape:hover {
+    border-bottom: 1px solid grey;
+    }
+
+    #pizzas {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 0, 0);
+    }
+
+    .card-pizzas {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 32px;
+    background-color: rgb(255, 123, 0);
+    margin-left: 5vh;
+    }
+
+    .image-pizzas {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    }
+
+    .discount-one {
+    display: flex;
+    justify-content: left;
+    width: 100%; 
+    gap: 150px;
+    background-color: rgb(41, 0, 0);
+    margin-top: 4vh;
+    }
+
+    .discount-two {
+    display: flex;
+    justify-content: left;
+    width: 100%; 
+    gap: 150px;
+    background-color: rgb(41, 0, 0);
+    margin-top: 4vh;
+    }
+
+    .discount-tree {
+    display: flex;
+    justify-content: left;
+    width: 100%; 
+    gap: 150px;
+    background-color: rgb(41, 0, 0);
+    margin-top: 4vh;
+    }
+
+    .discount-four {
+    display: flex;
+    justify-content: left;
+    width: 100%; 
+    gap: 150px;
+    background-color: rgb(41, 0, 0);
+    margin-top: 4vh;
+    }
+
+    #bebidas {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 0, 0);
+    }
+
+    #combos {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 0, 0);
+    }
+
+    #sobremesa {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 0, 0);
+    }
+
+    h3:hover {
+    color: #ff5000;
+    }
+
+    .card-names:hover {
+    color: #ff5000;
+    }
+
+    .campo-preenchimento {
+    margin-left: 1vh;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .cadastro-title {
+    font-size: 48px;
+    font-family: "Outfit";
+    text-align: center;
+    font-weight: bold;
+    }
+    
+    .cadastro-categoria {
+    font-size: 14px;
+    }
+
+    .input-cadastro {
+    width: 250px;
+    }
+
+    .campo-left {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .campo-center {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .campo-right {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .btn-confirmar {
+    border-radius: 32px;
+    width: 100px;
+    margin-left: 7vh;
+    }
+
+    .cadastro-all {
+    justify-items: center;
+    border: 1px solid black;
+    width: 30%;
+    margin-left: 65vh;
+    }
+
+    .link-login {
+    font-size: 14px;
+    border-radius: 32px;
+    padding: 0px 10px;
+    margin-left: 7vh;
+    border: 1px solid black;
+    width: 100px;
+    color: black;
+    }
+
+    #historico {
+    margin-left: 3vh;
+    justify-self: center;
+    text-align: center;
+    }
+
+    .hist-text-one {
+    font-size: 36px;
+    font-weight: bolder;
+    }
+
+    .hist-text-two {
+    font-size: 30px;
+    color:#717171;
+    }
+
+    .card-pedido {
+    border: 1px solid #717171;
+    }
+
+    .beletopi {
+    height: 100px;
+    width: 100px;
+    }
+
+    #car {
+    margin-left: 6vh;
+    }
+
+    .card-car {
+    margin-top: 2vh;
+    width: 80%;
+    }
+
+    .title-car {
+    height: 36px;
+    color: #ff5000;
+    font-weight: bold;
+    }
+
+    .text-card {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    border: 1px solid black;
+    height: 300px;
+    align-items: center;
+    }
+
+    .photo-car {
+    height: 100%;
+    }
+
+    @media (max-width: 680px) {
+    .perfil-container {
+    margin: 20px 15px;
+    padding: 15px;
+    }
+}

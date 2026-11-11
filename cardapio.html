@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav id="container">
+        <div class="menu">
+            <img src="imgs/ribeleto.png" alt="ribeleto" class="ribeleto">
+            <a href="index.html" class="nav-itens">Início</a>
+            <a href="#" class="nav-destaque">Cardápio</a>
+            <a href="pedidos.html" class="nav-itens">Pedidos</a>
+            <a href="login.html" class="nav-itens">LOGIN</a>
+            <a href="cadastrar.html" class="nav-itens">CADASTRAR-SE</a>
+            <button onclick="myFunction()" class="dark-mode">ALTERAR TEMA</button>
+            <input type="text" id="campo-busca" placeholder="Buscar...">
+            <a href="carrinho.html" class="nav-itens">🛒</a>
+            <a href="perfil.html" class="nav-itens">👤</a>
+        </div>
+    </nav>
+</header>
+
+<h2>Pizzas</h2>
+<section id="pizzas">
+    <div class="discount-one">
+        <div class="card-pizzas">
+        <img src="imgs/catupiry.png" alt="frango" class="image-pizzas">
+        <p class="pzz-info">Pizza Grande de Frango com Catupiry</p>
+        <p class="pzz-price">R$64,99</p>
+        <button class="btn-carrinho" data-nome="Pizza Grande de Frango com Catupiry" data-preco="64.99" data-imagem="imgs/catupiry.png">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="card-pizzas">
+        <img src="imgs/calabresa.jpg" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza Grande de Calabresa</p>
+        <p class="pzz-price">R$81,99</p>
+        <button class="btn-carrinho" data-nome="Pizza Grande de Calabresa" data-preco="81.99" data-imagem="imgs/calabresa.jpg">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="card-pizzas">
+        <img src="imgs/pizza-portuguesa-grande.jpg" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza de Portuguesa Grande</p>
+        <p class="pzz-price">R$86,99</p>
+        <button class="btn-carrinho" data-nome="Pizza de Portuguesa Grande" data-preco="86.99" data-imagem="imgs/pizza-portuguesa-grande.jpg">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card-pizzas">
+        <img src="imgs/milho.jpg" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza Grande de Corn & Bacon</p>
+        <p class="pzz-price">R$89,99</p>
+        <button class="btn-carrinho" data-nome="Pizza Grande de Corn & Bacon" data-preco="89.99" data-imagem="imgs/milho.jpg">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <div class="discount-one">
+        <div class="card-pizzas">
+        <img src="imgs/pepperoni.webp" alt="frango" class="image-pizzas">
+        <p class="pzz-info">Pizza Grande de Pepperoni</p>
+        <p class="pzz-price">R$78,99</p>
+        <button class="btn-carrinho" data-nome="Pizza Grande de Pepperoni" data-preco="78.99" data-imagem="imgs/pepperoni.webp">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="card-pizzas">
+        <img src="imgs/quatroqueijos.webp" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza Grande Quatro Queijos</p>
+        <p class="pzz-price">R$85,99</p>
+        <button class="btn-carrinho" data-nome="Pizza Grande Quatro Queijos" data-preco="85.99" data-imagem="imgs/quatroqueijos.webp">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="card-pizzas">
+        <img src="imgs/margherita.jpg" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza de Margherita Grande</p>
+        <p class="pzz-price">R$82,99</p>
+        <button class="btn-carrinho" data-nome="Pizza de Margherita Grande" data-preco="82.99" data-imagem="imgs/margherita.jpg">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card-pizzas">
+        <img src="imgs/chocolate.png" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza Grande de Morango com Chocolate</p>
+        <p class="pzz-price">R$81,99</p>
+        <button class="btn-carrinho" data-nome="Pizza Grande de Morango com Chocolate" data-preco="81.99" data-imagem="imgs/chocolate.png">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</section>
+
+<h2>Bebidas</h2>
+<section id="bebidas">
+    <div class="discount-two">
+        <div class="card-pizzas">
+        <img src="imgs/coca350.webp" alt="" class="image-pizzas">
+        <p class="pzz-info">Coca-Cola 350ml</p>
+        <p class="pzz-price">R$3,99</p>
+        <button class="btn-carrinho" data-nome="Coca-Cola 350ml" data-preco="3.99" data-imagem="imgs/coca350.webp">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="card-pizzas">
+        <img src="imgs/guarana350.jpg" alt="" class="image-pizzas">
+        <p class="pzz-info">Guaraná Antártica 350ml</p>
+        <p class="pzz-price">R$3,99</p>
+        <button class="btn-carrinho" data-nome="Guaraná Antártica 350ml" data-preco="3.99" data-imagem="imgs/guarana350.jpg">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="card-pizzas">
+        <img src="imgs/coca2l.webp" alt="" class="image-pizzas">
+        <p class="pzz-info">Coca-Cola 2l</p>
+        <p class="pzz-price">R$15,99</p>
+        <button class="btn-carrinho" data-nome="Coca-Cola 2l" data-preco="15.99" data-imagem="imgs/coca2l.webp">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card-pizzas">
+        <img src="imgs/guarana2l.webp" alt="" class="image-pizzas">
+        <p class="pzz-info">Guaraná Antártica 2l</p>
+        <p class="pzz-price">R$14,99</p>
+        <button class="btn-carrinho" data-nome="Guaraná Antártica 2l" data-preco="14.99" data-imagem="imgs/guarana2l.webp">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <div class="discount-two">
+        <div class="card-pizzas">
+        <img src="imgs/aguasemgas.webp" alt="" class="image-pizzas">
+        <p class="pzz-info">Água sem gás 500ml</p>
+        <p class="pzz-price">R$1,99</p>
+        <button class="btn-carrinho" data-nome="Água sem gás 500ml" data-preco="1.99" data-imagem="imgs/aguasemgas.webp">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="card-pizzas">
+        <img src="imgs/aguacomgas.webp" alt="" class="image-pizzas">
+        <p class="pzz-info">Água com gás 500ml</p>
+        <p class="pzz-price">R$2,49</p>
+        <button class="btn-carrinho" data-nome="Água com gás 500ml" data-preco="2.49" data-imagem="imgs/aguacomgas.webp">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card-pizzas">
+        <img src="imgs/sucodelvalle.webp" alt="" class="image-pizzas">
+        <p class="pzz-info">Suco Del Valle de Uva</p>
+        <p class="pzz-price">R$2,99</p>
+        <button class="btn-carrinho" data-nome="Suco Del Valle de Uva" data-preco="2.99" data-imagem="imgs/sucodelvalle.webp">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card-pizzas">
+        <img src="imgs/heineken.webp" alt="" class="image-pizzas">
+        <p class="pzz-info">Heineken 330ml</p>
+        <p class="pzz-price">R$7,99</p>
+        <button class="btn-carrinho" data-nome="Heineken 330ml" data-preco="7.99" data-imagem="imgs/heineken.webp">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</section>
+
+<h2>Combos</h2>
+<section id="combos">
+    <div class="discount-tree">
+        <div class="card-pizzas">
+        <img src="imgs/calabresa.png" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza Grande de Calabresa + Refrigerante de 2L</p>
+        <p class="pzz-price">R$99,99</p>
+        <button class="btn-carrinho" data-nome="Pizza Grande de Calabresa + Refrigerante de 2L" data-preco="99.99" data-imagem="imgs/calabresa.png">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="card-pizzas">
+        <img src="imgs/comboguesa.jpg" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza Portuguesa Grande com direito à Coca-Cola de 350ml</p>
+        <p class="pzz-price">R$112,99</p>
+        <button class="btn-carrinho" data-nome="Pizza Portuguesa Grande com direito à Coca-Cola de 350ml" data-preco="112.99" data-imagem="imgs/comboguesa.jpg">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card-pizzas">
+        <img src="imgs/marguarana.jpg" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza Grande de Margherita com Guaraná de 1.5L</p>
+        <p class="pzz-price">R$109,99</p>
+        <button class="btn-carrinho" data-nome="Pizza Grande de Margherita com Guaraná de 1.5L" data-preco="109.99" data-imagem="imgs/combo.jpg">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card-pizzas">
+        <img src="imgs/2pizas.jpg" alt="" class="image-pizzas">
+        <p class="pzz-info">2 Pizzas Grandes com Direito a um Guaraná de 2L</p>
+        <p class="pzz-price">R$179,99</p>
+        <button class="btn-carrinho" data-nome="2 Pizzas Grandes com Direito a um Guaraná de 2L" data-preco="179.99" data-imagem="imgs/2pizas.jpg">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</section>
+
+<h2>Sobremesas</h2>
+<section id="sobremesa">
+    <div class="discount-four">
+        <div class="card-pizzas">
+        <img src="imgs/chocolate.png" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza Grande de Morango com Chocolate</p>
+        <p class="pzz-price">R$81,99</p>
+        <button class="btn-carrinho" data-nome="Pizza Grande de Morango com Chocolate" data-preco="81.99" data-imagem="imgs/chocolate.png">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="card-pizzas">
+        <img src="imgs/banana.avif" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza Grande de Banana Com Doce de Leite</p>
+        <p class="pzz-price">R$92,99</p>
+        <button class="btn-carrinho" data-nome="Pizza Grande de Banana Com Doce de Leite" data-preco="92.99" data-imagem="imgs/banana.avif">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card-pizzas">
+        <img src="imgs/brigadeiro.jpg" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza Grande de Morango com Brigadeiro</p>
+        <p class="pzz-price">R$88,99</p>
+        <button class="btn-carrinho" data-nome="Pizza Grande de Morango com Brigadeiro" data-preco="88.99" data-imagem="imgs/brigadeiro.jpg">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card-pizzas">
+        <img src="imgs/sorvete.jpg" alt="" class="image-pizzas">
+        <p class="pzz-info">Pizza de Sorvete com Casquinhas</p>
+        <p class="pzz-price">R$89,99</p>
+        <button class="btn-carrinho" data-nome="Pizza de Sorvete com Casquinhas" data-preco="89.99" data-imagem="imgs/sorvete.jpg">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</section>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

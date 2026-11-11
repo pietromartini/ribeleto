@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body> 
+<header>
+    <nav id="container">
+        <div class="menu">
+            <img src="imgs/ribeleto.png" alt="ribeleto" class="ribeleto">
+            <a href="index.html" class="nav-itens">Início</a>
+            <a href="cardapio.html" class="nav-itens">Cardápio</a>
+            <a href="pedidos.html" class="nav-itens">Pedidos</a>
+            <a href="login.html" class="nav-itens">LOGIN</a>
+            <a href="cadastrar.html" class="nav-itens">CADASTRAR-SE</a>
+            <button onclick="myFunction()" class="dark-mode">ALTERAR TEMA</button>
+            <input type="text" id="campo-busca" placeholder="Buscar...">
+            <a href="carrinho.html" class="nav-itens">🛒</a>
+            <a href="#" class="nav-destaque">👤</a>
+        </div>
+    </nav>
+</header>
+
+<form id="perfil-form">
+<section class="cadastro-all">
+<div class="campo-left">
+    <p class="cadastro-title">Meu Perfil</p>
+    <div class="campo-preenchimento">
+    <p class="cadastro-categoria">Nome do Usuário</p>
+    <input type="text" id="perfil-nome" placeholder="Nome..." class="input-cadastro" required minlength="4">
+    </div>
+
+    <div class="campo-preenchimento">
+    <p class="cadastro-categoria">Data de Nascimento</p>
+    <input type="text" id="perfil-data-nascimento" placeholder="00/00/0000" class="input-cadastro" maxlength="10" required>
+    </div>
+</div>
+
+<div class="campo-center">
+    <div class="campo-preenchimento">
+    <p class="cadastro-categoria">CPF</p>
+    <input type="text" id="perfil-cpf" placeholder="999.999.999-99" class="input-cadastro" maxlength="14" required>
+    </div>
+
+    <div class="campo-preenchimento">
+    <p class="cadastro-categoria">CEP</p>
+    <input type="text" id="perfil-cep" placeholder="99999-999" class="input-cadastro" maxlength="9" required>
+    </div>
+</div>
+
+<div class="campo-right">
+    <div class="campo-preenchimento">
+    <p class="cadastro-categoria">Telefone</p>
+    <input type="text" id="perfil-telefone" placeholder="(99)99999-9999" class="input-cadastro" maxlength="15" required>
+    </div>
+
+    <div class="campo-preenchimento">
+    <p class="cadastro-categoria">Nova Senha</p>
+    <input type="password" id="perfil-senha" placeholder="Nova Senha..." class="input-cadastro" minlength="4">
+    <button type="submit" class="btn-confirmar" style="margin-top: 15px;">Salvar</button>
+</div>
+</div>
+</section>
+</form>
+
+<script src="script.js"></script>
+<script>
+
+    window.addEventListener('DOMContentLoaded', () => {
+        carregarDadosFormPerfil();
+    });
+</script>
+</body>
+</html>

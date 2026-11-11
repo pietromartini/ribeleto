@@ -1,0 +1,90 @@
+[
+  {
+    "id_pedido": 1,
+    "cliente_nome": "Gabriel Medeiros",
+    "cliente_email": "gabriel.medeiros@email.com",
+    "data_pedido": "2026-11-10T11:20:00",
+    "total_pedido": 168.97,
+    "status": "Pendente",
+    "itens": [
+      {
+        "id_produto": 1,
+        "produto_nome": "Pizza Grande de Frango com Catupiry",
+        "quantidade": 1,
+        "preco_unitario": 64.99
+      },
+      {
+        "id_produto": 9,
+        "produto_nome": "Pizza Grande de Margherita com Guaraná de 1.5L",
+        "quantidade": 1,
+        "preco_unitario": 103.98
+      }
+    ]
+  },
+  {
+    "id_pedido": 2,
+    "cliente_nome": "Mariana Costa",
+    "cliente_email": "mari.costa@email.com",
+    "data_pedido": "2026-11-10T12:05:00",
+    "total_pedido": 93.97,
+    "status": "Pendente",
+    "itens": [
+      {
+        "id_produto": 2,
+        "produto_nome": "Pizza Grande de Calabresa",
+        "quantidade": 1,
+        "preco_unitario": 81.99
+      },
+      {
+        "id_produto": 6,
+        "produto_nome": "Guaraná Antártica 2l",
+        "quantidade": 1,
+        "preco_unitario": 11.98
+      }
+    ]
+  },
+  {
+    "id_pedido": 3,
+    "cliente_nome": "Arthur Silva",
+    "cliente_email": "arthur.silva@email.com",
+    "data_pedido": "2026-11-10T13:45:00",
+    "total_pedido": 179.99,
+    "status": "Pendente",
+    "itens": [
+      {
+        "id_produto": 10,
+        "produto_nome": "2 Pizzas Grandes com Direito a um Guaraná de 2L",
+        "quantidade": 1,
+        "preco_unitario": 179.99
+      }
+    ]
+  },
+  {
+    "id_pedido": 4,
+    "cliente_nome": "Beatriz Rocha",
+    "cliente_email": "bia.rocha@email.com",
+    "data_pedido": "2026-11-10T14:10:00",
+    "total_pedido": 100.97,
+    "status": "Pendente",
+    "itens": [
+      {
+        "id_produto": 11,
+        "produto_nome": "Pizza Grande de Morango com Chocolate",
+        "quantidade": 1,
+        "preco_unitario": 81.99
+      },
+      {
+        "id_produto": 7,
+        "produto_nome": "Água com gás 500ml",
+        "quantidade": 1,
+        "preco_unitario": 1.99
+      },
+      {
+        "id_produto": 5,
+        "produto_nome": "Heineken 330ml",
+        "quantidade": 2,
+        "preco_unitario": 7.99
+      }
+    ]
+  }
+]
